@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+#container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+#menu {
+  width: 250px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  color: #fff;
+}
+#hambarger {
+  height: 30px;
+}
+#logo {
+  height: 30px;
+  width: 120px;
+  margin-bottom: 3px;
+}
+#menu p {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+#menu p img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+#home {
+  flex-grow: 1;
+  padding: 20px;
+}
+#navbar {
+  margin-bottom: 20px;
+}
+#navbar input[type="search"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#navbar button.btn {
+  margin-right: 5px;
+  padding: 10px 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+#options .each {
+  flex-basis: calc(15% - 10px);
+}
+
+.description {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+}
+
+.each img {
+  width: 340px;
+}
+
+.description div {
+  flex-basis: calc(100% - 20px);
+}
+.description img {
+  width: 20px;
+  height: 20px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  #menu {
+    display: none;
+  }
+  #home {
+    padding: 10px;
+  }
+  #options {
+    justify-content: center;
+    align-items: center;
+  }
+}
